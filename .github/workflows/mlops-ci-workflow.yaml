@@ -76,6 +76,6 @@ jobs:
         context: "."
         push: true
         tags: lcndinda/fastapi:${{ github.sha }}
-        file: .Dockerfile
+        file: ./Dockerfile
 
   
