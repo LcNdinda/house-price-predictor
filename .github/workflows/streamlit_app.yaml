@@ -32,6 +32,7 @@ jobs:
           file: ./streamlit_app/Dockerfile
           push: true
           tags: |
+            docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-priceapp:latest
             docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-priceapp:${{ github.sha }}
 
 
