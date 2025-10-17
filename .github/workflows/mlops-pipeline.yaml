@@ -162,4 +162,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
+            docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-pricemodel:latest
             docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-pricemodel:${{ github.sha }}
