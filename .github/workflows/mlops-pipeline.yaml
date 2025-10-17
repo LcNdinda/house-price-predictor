@@ -161,6 +161,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: |
             docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-pricemodel:latest
             docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-pricemodel:${{ github.sha }}
